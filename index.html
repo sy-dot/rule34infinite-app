@@ -70,19 +70,21 @@
     <div class="menu">
       <ul>
         <li>
-          <span>App ver:
-            <script>
-              var ver = require('./package.json');
-              document.write(ver.version.substring(0, 1));
-            </script>
-          </span>
-        </li>
-        <li>
-          <a href="pages/app_ver.html">Check Updates</a>
+          <a class="tooltip" href="https://github.com/sy-dot/rule34infinite-app/releases" target="_blank">
+            <span>App ver:
+              <script>
+                var ver = require('./package.json');
+                document.write(ver.version.substring(0, 1));
+              </script>
+            </span>
+            <span class="tooltiptext">Check updates on <i class="fa-brands fa-github"></i>
+              GitHub</span>
+          </a>
         </li>
         <hr>
         <li>
-          <span>Troubles?<br><span style="color: #f7f7f780;">Preferences > Reset Application</span></span>
+          <span>Troubles?<br><span style="color: #f7f7f780;">Preferences > Reset
+              Application</span></span>
         </li>
         <li>
           <span><a href="#" onclick="location.reload(true)">Reload</a></span>
