@@ -1,6 +1,6 @@
 ![banner](/images/banner.png)
 
-# Rule34 infinite App
+# Rule34 infinite App.
 
 ![preview](/images/screenshot-0.jpg)
 
