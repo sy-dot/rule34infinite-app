@@ -2,8 +2,6 @@
 
 # Rule34 infinite App
 
-> :warning: **18+**
-
 ![preview](/images/screenshot-0.jpg)
 
 ![preview](/images/screenshot-1.jpg)
