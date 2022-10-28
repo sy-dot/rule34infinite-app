@@ -1,0 +1,78 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a {
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+a:hover {
+  color: #f7f7f780;
+}
+
+#main {
+  position: relative;
+  border-bottom: 3px solid #ff1111;
+  z-index: 9999;
+}
+
+hr {
+  color: rgba(255,255,255,.2);
+  background-color: rgba(255,255,255,.2);
+  border: 0px none;
+  height: 1px;
+  clear: both;
+}
+
+/*==================================
+=            Scroll bar            =
+==================================*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c79ff;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

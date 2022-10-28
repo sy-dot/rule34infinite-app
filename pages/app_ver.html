@@ -1,0 +1,81 @@
+<style type="text/css">
+  * {
+    margin: 0;
+  }
+
+  body {
+    background: #363636;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f7f7f7;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    -webkit-app-region: drag;
+  }
+
+  .cwu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    margin: -50px 0 0 -100px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-btn {
+    width: 45%;
+    max-width: 110px;
+    color: #fff;
+    margin: 20px 10px;
+    padding: 10px 5px 10px 5px;
+    text-align: left;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    -webkit-app-region: no-drag;
+  }
+
+  .app-btn.blu {
+    background-color: #1c1c1c;
+    transition: background-color 0.25s linear;
+    justify-content: center;
+  }
+
+  .app-btn.blu:hover {
+    background-color: #454545;
+  }
+
+  .app-btn i {
+    width: 25%;
+    text-align: center;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  .app-btn .big-txt {
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="flex social-btns">
+  <a class="app-btn blu flex vert" href="#" onclick="history.back()">
+    <!-- <i class="fa-solid fa-backward"></i> -->
+    <i class="fa-solid fa-square-caret-left"></i>
+    <p><span class="big-txt">Back</span></p>
+  </a>
+</div>
+
+<div class="cwu">
+  <span><iframe src="https://r34.8713.su/app_ver.html" frameborder="0" loading="lazy"></iframe></span>
+</div>

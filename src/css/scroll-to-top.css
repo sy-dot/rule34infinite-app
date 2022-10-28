@@ -1,0 +1,50 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+#scroll-to-top {
+  display: inline-block;
+  background-color: #363636;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#scroll-to-top::after {
+  content: "\f0de";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #f7f7f7;
+}
+
+#scroll-to-top:hover {
+  cursor: pointer;
+  /* background-color: #333; */
+  background-color: #ff00002a;
+}
+
+#scroll-to-top:active {
+  background-color: #555;
+}
+
+#scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+@media (min-width: 500px) {
+  #scroll-to-top {
+    margin: 1px;
+  }
+}
