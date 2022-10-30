@@ -19,6 +19,7 @@ function createWindow(){
     icon: __dirname+'/src/img/icon.png',
     frame: false,
     resizable: true,
+    show: false,
     webPreferences: {
       enableRemoteModule: true,
       nodeIntegration: true,
@@ -69,10 +70,43 @@ function createWindow(){
   win.on('closed', () => {
     win = null;
   })
-  
+
+
+  //// SPLASH СКРИН
+  var splash = new BrowserWindow({ 
+    width: 500,
+    height: 300,
+    maximizable: false,
+    fullscreen: false,
+    fullscreenable: false,
+    resizable: false,
+    transparent: true, 
+    frame: false,
+    alwaysOnTop: true,
+    icon: __dirname+'/src/img/icon.png',
+    webPreferences: {
+      devTools: false
+    }
+  });
+
+  splash.loadFile('splash.html');
+  splash.center();
+  win.once('ready-to-show', () => {
+    splash.close();
+    win.center(); // Центрирует окно в любом случаи!
+    win.show();
+  });
 }
 
-app.on('ready', createWindow);
+
+app.whenReady().then(() => {
+  createWindow()
+
+  app.on('activate', function () {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+  })
+})
+// app.on('ready', createWindow);
 // app.on('ready', () => {
 //   setTimeout(() => {
 //     createWindow()

@@ -7,7 +7,7 @@ document.getElementById('showTitle').innerHTML = title;
 const settings = require(`./src/themes/dark.json`);
 
 var body = document.body.style;
-var nav = document.getElementById('nav-0').style;
+var nav = document.getElementById('nav').style;
 var toggler = document.getElementById('togglers').style;
 var Minimize = document.getElementById('minimizeBtn').style;
 var Maximize = document.getElementById('maximizeBtn').style;
