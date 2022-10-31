@@ -40,6 +40,12 @@
 
 * * *
 
+**Данные приложения хранятся по данному пути:**
+
+**`$:\Users\%username%\AppData\Roaming\rule34infinite`**
+
+* * *
+
 **[Backend](https://github.com/kurozenzen/r34-json-api)**
 
 * * *
