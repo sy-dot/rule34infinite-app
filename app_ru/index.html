@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ru">
+
+<head id="head">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="referrer" content="no-referrer" />
+
+  <link href="src/css/reset.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./essentials.css" />
+  <link rel="stylesheet" href="src/css/scroll-to-top.css" />
+
+  <script src="src/js/aligner.js" defer></script>
+
+  <link rel="stylesheet" href="src/modal/hystmodal.min.css">
+
+  <!-- === FONTAWESOME ICONS === -->
+  <link rel="stylesheet" href="src/icons/fontawesome/all.min.css" defer>
+  <script src="src/icons/fontawesome/all.min.js" defer></script>
+
+  <title id="title">Rule34 Infinite</title>
+</head>
+
+<body id="body">
+
+  <a id="scroll-to-top"></a>
+
+  <!-- === MAIN === -->
+  <div id="nav_blank"></div>
+  <div id="nav">
+    <span class="sidemenu"></span>
+    <div id="showTitle">
+    </div>
+    <div id="togglers">
+      <div id="minimizeBtn"><span>-</span>
+      </div>
+      <div id="maximizeBtn"><span></span>
+      </div>
+      <div id="closeBtn"><span>&times;</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    <div class="menu menu_disabled">
+      <div class="menu-list">
+        <ul>
+          <li>
+            <a class="tooltip" href="https://github.com/sy-dot/rule34infinite-app/releases" target="_blank">
+              <span>App ver:
+                <script>
+                  var ver = require('./package.json');
+                  document.write(ver.version.substring(0, 1));
+                </script>
+              </span>
+              <span class="tooltiptext">Проверьте обновления на <i class="fa-brands fa-github"></i>
+                GitHub</span>
+            </a>
+          </li>
+          <hr>
+          <li>
+            <span>Проблемы?<br><span style="color: #f7f7f780;">Настройки > Сброс приложения</span></span>
+          </li>
+          <li>
+            <span><a href="#" onclick="location.reload(true)">Перезагрузить</a></span>
+          </li>
+          <hr>
+          <li>
+            <a data-hystmodal="#aboutModal" href="#"><i class="fa-solid fa-circle-info"></i> О приложении</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- === MODAL ABOUT === -->
+    <div class="hystmodal hystmodal--simple" id="aboutModal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <button data-hystclose class="hystmodal__close">Закрыть</button>
+          <div class="hystmodal__styled">
+            <img src="src/img/banner.png" alt="">
+            <h1>О приложении</h1>
+            <p>Простой, но мощный инструмент поиска для rule34.xxx.</p>
+            <p>Цель этого приложения - обеспечить более приятный опыт просмотра rule34.</p>
+            <p>Главной особенностью приложения является простой в использовании поиск по тегам.</p>
+            <p>Так же приложение позволяет вам серфить rule34 если тот заблокирован в вашей стране.</p>
+            <hr>
+            <div class="accordion">
+              <button type="button" class="accordion__btn">Авторское право</button>
+              <div class="accordion__content">
+                <h4>Что вы сейчас видите?</h4>
+                <p>Это приложение (окно), написано независимо от приложения на React.</p>
+                <h4>Что это значит?</h4>
+                <p>Это означает, что я сделал билд Rule34 React и использовал его в своем приложение.</p>
+                <p>Так же это означает что я, не являюсь автором приложения <span class="bold">Rule34 React!</span></p>
+                <p>Я - сделал приложение для Windows.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="bold t-center">
+              <p><a class="bold" href="https://github.com/kurozenzen/r34-react" target="_blank"><i
+                    class="fa-brands fa-github icon-l"></i>R34 React</a> <span
+                  style="margin-left: 10px; margin-right: 10px;">|</span> <a href="https://github.com/kurozenzen"
+                  target="_blank">kurozenzen<i class="fa-solid fa-user icon-r"></i></a></p>
+            </div>
+            <div class="bold t-center">
+              <a href="https://github.com/sy-dot/rule34infinite-app" target="_blank"><i
+                  class="fa-brands fa-github icon-l"></i>GitHub</a>
+              <span style="margin-left: 10px; margin-right: 10px;">|</span> <a
+                href="https://app.8713.su/rule34infinite/" target="_blank">Website<i
+                  class="fa-solid fa-link icon-r"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="margin-top: 27px;" class="main-area">
+      <!-- === APP HERE === -->
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="app-root" class="container"></div>
+      <script>
+        ! function (e) {
+          function r(r) {
+            for (var n, a, i = r[0], c = r[1], f = r[2], s = 0, p = []; s < i.length; s++) a = i[s], Object.prototype
+              .hasOwnProperty.call(o, a) && o[a] && p.push(o[a][0]), o[a] = 0;
+            for (n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+            for (l && l(r); p.length;) p.shift()();
+            return u.push.apply(u, f || []), t()
+          }
+
+          function t() {
+            for (var e, r = 0; r < u.length; r++) {
+              for (var t = u[r], n = !0, i = 1; i < t.length; i++) {
+                var c = t[i];
+                0 !== o[c] && (n = !1)
+              }
+              n && (u.splice(r--, 1), e = a(a.s = t[0]))
+            }
+            return e
+          }
+          var n = {},
+            o = {
+              2: 0
+            },
+            u = [];
+
+          function a(r) {
+            if (n[r]) return n[r].exports;
+            var t = n[r] = {
+              i: r,
+              l: !1,
+              exports: {}
+            };
+            return e[r].call(t.exports, t, t.exports, a), t.l = !0, t.exports
+          }
+          a.e = function (e) {
+            var r = [],
+              t = o[e];
+            if (0 !== t)
+              if (t) r.push(t[2]);
+              else {
+                var n = new Promise((function (r, n) {
+                  t = o[e] = [r, n]
+                }));
+                r.push(t[2] = n);
+                var u, i = document.createElement("script");
+                i.charset = "utf-8", i.timeout = 120, a.nc && i.setAttribute("nonce", a.nc), i.src = function (e) {
+                  return a.p + "static/js/" + ({} [e] || e) + "." + {
+                    0: "c573facb",
+                    4: "e87c29da",
+                    5: "ad21263f",
+                    6: "f99b844a",
+                    7: "df4a975c"
+                  } [e] + ".chunk.js"
+                }(e);
+                var c = new Error;
+                u = function (r) {
+                  i.onerror = i.onload = null, clearTimeout(f);
+                  var t = o[e];
+                  if (0 !== t) {
+                    if (t) {
+                      var n = r && ("load" === r.type ? "missing" : r.type),
+                        u = r && r.target && r.target.src;
+                      c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + u + ")", c.name =
+                        "ChunkLoadError",
+                        c.type = n, c.request = u, t[1](c)
+                    }
+                    o[e] = void 0
+                  }
+                };
+                var f = setTimeout((function () {
+                  u({
+                    type: "timeout",
+                    target: i
+                  })
+                }), 12e4);
+                i.onerror = i.onload = u, document.head.appendChild(i)
+              } return Promise.all(r)
+          }, a.m = e, a.c = n, a.d = function (e, r, t) {
+            a.o(e, r) || Object.defineProperty(e, r, {
+              enumerable: !0,
+              get: t
+            })
+          }, a.r = function (e) {
+            "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+              value: "Module"
+            }), Object.defineProperty(e, "__esModule", {
+              value: !0
+            })
+          }, a.t = function (e, r) {
+            if (1 & r && (e = a(e)), 8 & r) return e;
+            if (4 & r && "object" == typeof e && e && e.__esModule) return e;
+            var t = Object.create(null);
+            if (a.r(t), Object.defineProperty(t, "default", {
+                enumerable: !0,
+                value: e
+              }), 2 & r && "string" != typeof e)
+              for (var n in e) a.d(t, n, function (r) {
+                return e[r]
+              }.bind(null, n));
+            return t
+          }, a.n = function (e) {
+            var r = e && e.__esModule ? function () {
+              return e.default
+            } : function () {
+              return e
+            };
+            return a.d(r, "a", r), r
+          }, a.o = function (e, r) {
+            return Object.prototype.hasOwnProperty.call(e, r)
+          }, a.p = "./", a.oe = function (e) {
+            throw console.error(e), e
+          };
+          var i = this.webpackJsonpr34inf = this.webpackJsonpr34inf || [],
+            c = i.push.bind(i);
+          i.push = r, i = i.slice();
+          for (var f = 0; f < i.length; f++) r(i[f]);
+          var l = c;
+          t()
+        }([])
+      </script>
+      <!-- === APP END === -->
+    </div>
+
+
+    <link href="src/css/menu.css" rel="stylesheet">
+    <link href="src/css/main.css" rel="stylesheet">
+    <script src="src/js/menuHandler.js" async></script>
+    <script src="src/js/init.js" async></script>
+    <script src="src/modal/hystmodal.min.js" async></script>
+    <script src="src/js/main.js" async></script>
+
+    <script src="./static/js/3.0b1869aa.chunk.js" async></script>
+    <script src="./static/js/main.bc972f06.chunk.js" async></script>
+    <script src="src/js/scroll-to-top.js" async></script>
+
+
+
+</body>
+
+</html>

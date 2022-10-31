@@ -28,6 +28,18 @@ hr {
   clear: both;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.t-center {
+  text-align: center;
+}
+
+#app-root h3 {
+  font-weight: bold;
+}
+
 /* === Tooltip == */
 .tooltip {
   position: relative;
@@ -68,6 +80,188 @@ hr {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+
+/* === HYSTMODAL === */
+.hystmodal__window {
+  width: auto;
+  max-width: 75%;
+  background: #222222;
+}
+
+.hystmodal--simple .hystmodal__window {
+  position: relative;
+  overflow: visible;
+  border-radius: 4px;
+  padding: 30px 30px;
+}
+
+.hystmodal--simple .hystmodal__wrap {
+  width: 90%;
+}
+
+.hystmodal__styled {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hystmodal .accordion__btn {
+  font-size: 20px;
+}
+
+.hystmodal__styled img {
+  display: block;
+  margin-bottom: 0.8em;
+  max-width: 100%;
+}
+
+.hystmodal__styled p {
+  margin-bottom: 0.8em;
+}
+
+.hystmodal__styled h1 {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hystmodal__styled h2 {
+  font-size: 1.8em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hystmodal__styled h3 {
+  font-size: 1.6em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hystmodal__styled h4 {
+  font-size: 1.4em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hystmodal__styled h5 {
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hystmodal__styled h6 {
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.hystmodal__styled hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgba(255,255,255,.2);
+  background-color: rgba(255,255,255,.2);
+  border: 0px none;
+  border-radius: 6px;
+  height: 4px;
+  clear: both;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.hystmodal__styled ul {
+  margin-bottom: 0.8em;
+}
+
+.hystmodal__styled li {
+  padding: 0.2em 0 0.2em 30px;
+  position: relative;
+  list-style: none;
+}
+
+.hystmodal__styled li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #494949;
+  border-radius: 50%;
+  top: 12px;
+  left: 10px;
+}
+
+.hystmodal__styled .icon-l {
+  margin-right: 10px;
+}
+
+.hystmodal__styled .icon-r {
+  margin-left: 10px;
+}
+
+.hystmodal__close {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: -40px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* === ACCORDION === */
+.accordion__btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #363636;
+  color: #fff;
+  text-align: left;
+  transition: .2s;
+}
+
+.accordion__btn:focus {
+  text-decoration: none;
+}
+
+.accordion__btn::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+
+.accordion__btn--active+.accordion__content {
+  display: block;
+}
+
+.accordion__btn--active {
+  background: #454545;
+}
+
+.accordion__btn--active::after {
+  content: '\25b4';
+}
+
+.accordion__content {
+  padding: 15px;
+  background: rgb(99, 99, 99);
+  display: none;
+  overflow: auto;
 }
 
 /*==================================
