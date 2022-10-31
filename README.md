@@ -6,7 +6,9 @@
 
 ![preview](/images/screenshot-1.jpg)
 
-## Установка 
+# Electron
+
+## Установка
 
 **`npm install`**
 
@@ -21,6 +23,20 @@
 **`npm distwin`**
 
 **_Подробнее > package.json_**
+
+# R34 React
+
+## Установка
+
+**`yarn install`**
+
+## :sparkles: Запуск
+
+**`yarn start`**
+
+## :gear: Билд
+
+**`yarn build`**
 
 * * *
 
