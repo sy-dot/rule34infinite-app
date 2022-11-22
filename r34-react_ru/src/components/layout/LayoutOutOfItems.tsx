@@ -55,11 +55,11 @@ export function OutOfItems() {
     <StyledSurface>
       <StyledImage src={outOfResultsPicture} alt='Shironeko does not understand' />
       <HorizontalLine />
-      <SmallTitle>You have reached the end!</SmallTitle>
-      <p>Go look for something else!</p>
+      <SmallTitle>Вы дошли до конца!</SmallTitle>
+      <p>Ищите что-нибудь еще!</p>
       {aliases.length > 0 && (
         <>
-          <p>How about some of these?</p>
+          <p>Как насчет некоторых из них?</p>
           <TagList tags={aliasesForRendering} onTagClick={toggleTag} onTagMenu={NO_OP} detailed />
         </>
       )}
